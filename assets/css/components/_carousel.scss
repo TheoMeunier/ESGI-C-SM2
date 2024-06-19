@@ -1,0 +1,18 @@
+.carousel-container {
+    display: flex;
+    gap: 3rem;
+    overflow: auto;
+    position: relative;
+    scrollbar-width: none;
+    padding: 2rem;
+
+    .carousel-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        justify-content: space-between;
+        user-select: none;
+    }
+
+
+}

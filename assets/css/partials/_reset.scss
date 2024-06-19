@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: 'Olympic Sans', sans-serif;
 }
 
 body {
@@ -36,11 +36,13 @@ img {
   height: 100%;
   object-fit: cover;
 }
-svg{
+
+svg {
   color: var(--black);
   display: inline-block;
   vertical-align: middle;
 }
+
 * {
   box-sizing: border-box;
 }

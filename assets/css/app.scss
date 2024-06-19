@@ -1,0 +1,14 @@
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/functions';
+@import 'partials/utilities';
+@import 'partials/fonts';
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/header';
+
+
+
+main {
+    padding: 5rem 0;
+}

@@ -1,25 +1,23 @@
 // Définitions @font-face
 @font-face {
     font-family: 'Olympic Headline';
-    src: url('../fonts/OlympicHeadline-Bold.woff2') format('woff2'),
-         url('../fonts/OlympicHeadline-Bold.woff') format('woff');
+    src: url('../assets//fonts/OlympicHeadline-Regular.woff2') format('woff2'),
 }
 
 @font-face {
     font-family: 'Olympic Sans';
     src: url('../fonts/OlympicSans-Bold.woff2') format('woff2'),
-         url('../fonts/OlympicSans-Bold.woff') format('woff');
+        url('../fonts/OlympicSans-Bold.woff') format('woff');
 }
 
-// Définitions des variables de police
 $font-base: (
-    font-family: 'Olympic Headline', sans-serif,
+    font-family: 'Olympic Headline' sans-serif,
     font-weight: normal,
     line-height: 1.5
 );
 
 $font-sans: (
-    font-family: 'Olympic Sans', sans-serif,
+    font-family: 'Olympic Sans' sans-serif,
     font-weight: normal,
     line-height: 1.5
 );

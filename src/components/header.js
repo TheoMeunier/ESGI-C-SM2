@@ -4,13 +4,11 @@ export const Header = {
     type: 'header',
     children: [
         {
-            type: 'h1',
-            children: [
-                {
-                    type: 'TEXT_NODE',
-                    content: 'Header',
-                },
-            ],
+            type: 'img',
+            props: {
+                src: '../../assets/images/icons/logo.svg',
+                alt: 'logo',
+            },
         },
         NavBar,
     ],

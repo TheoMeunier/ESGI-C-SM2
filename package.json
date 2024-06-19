@@ -9,7 +9,8 @@
         "preview": "vite preview",
         "format": "prettier --write .",
         "lint": "npx eslint .",
-        "lint:fix": "npx eslint . --fix"
+        "lint:fix": "npx eslint . --fix",
+        "watch": "sass --watch ./assets/css/app.scss ./assets/css/app.css"
     },
     "devDependencies": {
         "@eslint/js": "^9.0.0",
@@ -18,8 +19,11 @@
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-n": "^16.6.2",
         "eslint-plugin-promise": "^6.1.1",
+        "leaflet": "^1.9.4",
         "prettier": "3.2.5",
-        "vite": "^5.2.0",
-        "leaflet": "^1.9.4"
+        "vite": "^5.2.0"
+    },
+    "dependencies": {
+        "sass": "^1.77.6"
     }
 }

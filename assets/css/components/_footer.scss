@@ -1,0 +1,50 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem;
+    background-color: #00287F;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    .logo-footer {
+        width: 18rem;
+    }
+
+    p {
+        position: relative;
+        font-weight: bolder;
+        font-size: 1.6rem;
+
+        &::before {
+            content: url('../images/mascotte-footer.png');
+            position: absolute;
+            transform: translate(-65%, -70%);
+            width: 20rem;
+            height: 24rem;
+            object-fit: cover;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+
+        li {
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                img {
+                    width: 2.4rem;
+                }
+            }
+        }
+
+    }
+}

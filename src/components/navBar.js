@@ -1,19 +1,38 @@
 import { BrowserLink } from '../components/BrowerRouter.js';
 
 export const NavBar = {
-    type: 'div',
+    type: 'nav',
     children: [
-        BrowserLink({
-            title: 'home',
-            to: '/',
-        }),
-        BrowserLink({
-            title: 'event',
-            to: '/events',
-        }),
-        BrowserLink({
-            title: 'contact',
-            to: '/contact',
-        }),
-    ],
+        {
+            type: 'ul',
+            children: [
+                {
+                    type: 'li',
+                    children: [
+                        BrowserLink({
+                            title: 'home',
+                            to: '/',
+                        }),
+                    ],
+                },
+                {
+                    type: 'li',
+                    children: [
+                        BrowserLink({
+                            title: 'event',
+                            to: '/events',
+                        }),
+                    ],
+                },
+                {
+                    type: 'li',
+                    children: [
+                        BrowserLink({
+                            title: 'contact',
+                            to: '/contact',
+                        }),
+                    ],
+                },
+            ],
+        }],
 };
