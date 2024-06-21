@@ -45,4 +45,27 @@ export const BrowserLink = function (props) {
     };
 };
 
+export const Cta = function (props) {
+    return {
+        type: 'a',
+        props: {
+            href: props.to,
+            class: 'cta',
+        },
+        events: {
+            click: [
+                function (event) {
+                    event.preventDefault();
+                    history.pushState(null, null, props.to);
+                },
+            ],
+        },
+        children: [
+            {
+                type: 'TEXT_NODE',
+                content: props.title,
+            },
+        ],
+    };
+};
 export default BrowserRouter;

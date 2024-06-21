@@ -1,5 +1,7 @@
 import { Header } from '../components/header.js';
 import { Footer } from '../components/footer.js';
+import { HeroHome } from '../components/home/heroHome.js';
+import { evenementList } from '../components/home/evenementList.js';
 
 export const Home = {
     type: 'div',
@@ -8,15 +10,8 @@ export const Home = {
         {
             type: 'main',
             children: [
-                {
-                    type: 'h1',
-                    children: [
-                        {
-                            type: 'TEXT_NODE',
-                            content: 'Home',
-                        },
-                    ],
-                },
+                HeroHome,
+                evenementList,
             ],
         },
         Footer

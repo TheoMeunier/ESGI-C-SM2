@@ -1,4 +1,4 @@
-import { BrowserLink } from '../components/BrowerRouter.js';
+import { BrowserLink } from './BrowserRouter.js';
 
 export const NavBar = {
     type: 'nav',

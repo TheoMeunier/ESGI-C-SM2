@@ -1,41 +1,55 @@
-// Définitions @font-face
 @font-face {
     font-family: 'Olympic Headline';
-    src: url('../assets//fonts/OlympicHeadline-Regular.woff2') format('woff2'),
+    src: url('./../../assets/fonts/OlympicHeadline-Regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Olympic Headline';
+    src: url('./../../assets/fonts/OlympicHeadline-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Olympic Sans';
-    src: url('../fonts/OlympicSans-Bold.woff2') format('woff2'),
-        url('../fonts/OlympicSans-Bold.woff') format('woff');
+    src: url('./../../assets/fonts/OlympicSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
 }
 
-$font-base: (
-    font-family: 'Olympic Headline' sans-serif,
-    font-weight: normal,
-    line-height: 1.5
-);
+@font-face {
+    font-family: 'Olympic Sans';
+    src: url('./../../assets/fonts/OlympicSans-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
 
-$font-sans: (
-    font-family: 'Olympic Sans' sans-serif,
-    font-weight: normal,
-    line-height: 1.5
-);
+@font-face {
+    font-family: 'Olympic Sans';
+    src: url('./../../assets/fonts/OlympicSans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
 
-$font-h1-desktop: map_merge($font-base, (font-size: 64px));
-$font-h2-desktop: map_merge($font-base, (font-size: 64px));
-$font-h3-desktop: map_merge($font-base, (font-size: 24px));
-$font-CTA-desktop: map_merge($font-base, (font-size: 24px));
+@font-face {
+    font-family: 'Olympic Sans';
+    src: url('./../../assets/fonts/OlympicSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
 
-$font-text-desktop: map_merge($font-sans, (font-size: 16px));
+@font-face {
+    font-family: 'Olympic Sans';
+    src: url('./../../assets/fonts/OlympicSans-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
 
-$font-time-desktop: map_merge($font-sans, (font-size: 12px, font-style: italic));
-
-$font-h1-mobile: map_merge($font-base, (font-size: 32px));
-$font-h2-mobile: map_merge($font-base, (font-size: 24px));
-$font-h3-mobile: map_merge($font-base, (font-size: 16px));
-$font-CTA-mobile: map_merge($font-base, (font-size: 10px));
-
-$font-text-mobile: map_merge($font-sans, (font-size: 10px));
-
-$font-time-mobile: map_merge($font-sans, (font-size: 10px, font-style: italic));
+@font-face {
+    font-family: 'Olympic Sans';
+    src: url('./../../assets/fonts/OlympicSans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

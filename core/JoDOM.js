@@ -1,4 +1,4 @@
-import BrowserRouter from '../src/components/BrowerRouter.js';
+import BrowserRouter from '../src/components/BrowserRouter.js';
 import type_check from './typeCheck.js';
 const JoDOM = {
     render: function (rootElement, routes) {

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5rem;
     margin: 0 auto;
     max-width: 140rem;
@@ -12,21 +13,24 @@
         gap: 3.5rem;
         flex-direction: column;
         max-width: 60rem;
+        gap: 2rem;
 
-        h1 {
-            font-size: 4.8rem;
-            font-weight: bolder;
-            line-height: 1.2;
-            color: #0078D0;
+        .hero-title {
             font-family: 'Olympic Headline', sans-serif;
+            font-size: 6.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 7.5rem;
+            color: #0078D0;
         }
 
-        p {
+        .hero-content {
             font-size: 1.8rem;
             font-weight: 500;
         }
 
         .cta {
+            display: inline-block;
             padding: 1rem 2rem;
             border: 0;
             background-color: #0078D0;
@@ -47,9 +51,9 @@
         }
 
 
-        svg {
+        img {
             width: 100%;
-            height: 100%;
+            height: 50rem;
             object-fit: cover;
         }
     }

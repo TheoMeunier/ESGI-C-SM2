@@ -6,9 +6,14 @@
 @import 'components/navbar';
 @import 'components/footer';
 @import 'components/header';
+@import 'components/hero';
+@import 'components/card';
+@import 'components/carousel';
+@import 'components/evenementList';
 
 
 
 main {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
+
 }
