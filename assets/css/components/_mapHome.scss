@@ -1,0 +1,56 @@
+.amuse-section {
+  margin-top: 10rem;
+  max-width: 140rem;
+  margin: 10rem auto 0 auto;
+  flex-wrap: wrap;
+
+  h2 {
+    color: var(--black);
+    font-family: 'Olympic Headline', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  p {
+    color: var(--black);
+    font-family: "Olympic Sans", sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 64px;
+    width: 50rem;
+    text-align: center;
+  }
+
+  img {
+    height: 40rem;
+    width: 60rem;
+    gap: 0px;
+    border-radius: 1.6rem;
+    opacity: 0px;
+    
+  }
+
+  .cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 0;
+    background-color: #0078D0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: fit-content;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    font-family: 'Olympic Headline', sans-serif;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        background-color: #fff;
+        color: #00287F;
+    }
+    
+}
+}
