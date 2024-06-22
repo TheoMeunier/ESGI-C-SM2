@@ -511,7 +511,7 @@ header nav ul li a {
 .contact-main .contact-header .mascotte-contact {
   height: 15rem;
   width: auto;
-  margin-right: 1rem;
+  margin-right: 4rem;
 }
 .contact-main .contact-header .contact-title {
   font-family: "Olympic Headline";
@@ -537,7 +537,7 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 120rem;
+  width: 140rem;
   gap: 2rem;
 }
 .contact-info .form-contact .form-row {
@@ -554,7 +554,7 @@ header nav ul li a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 20px;
   color: var(--black);
   margin-bottom: 1rem;
 }
@@ -563,7 +563,7 @@ header nav ul li a {
   padding: 1rem;
   border-radius: 5px;
   font-family: "Olympic Sans";
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
