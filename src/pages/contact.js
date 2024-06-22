@@ -8,16 +8,35 @@ export const Contact = {
         Header,
         {
             type: 'main',
+            props: {
+                class: 'contact-main',
+            },
             children: [
                 {
-                    type: 'h1',
+                    type: 'div',
                     props: {
-                        class: 'contact-title',
+                        class: 'contact-header',
                     },
                     children: [
                         {
-                            type: 'TEXT_NODE',
-                            content: 'Contact',
+                            type: 'img',
+                            props: {
+                                src: '../../assets/images/mascotte-contact.png',
+                                alt: 'Mascotte JO 2024',
+                                class: 'mascotte-contact',
+                            },
+                        },
+                        {
+                            type: 'h1',
+                            props: {
+                                class: 'contact-title',
+                            },
+                            children: [
+                                {
+                                    type: 'TEXT_NODE',
+                                    content: 'Contact',
+                                },
+                            ],
                         },
                     ],
                 },
