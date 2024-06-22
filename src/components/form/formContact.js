@@ -98,6 +98,7 @@ export const formContact = {
                         id: 'message',
                         name: 'message',
                         required: true,
+
                     },
                     children: [],
                 },

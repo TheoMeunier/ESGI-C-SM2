@@ -1,5 +1,6 @@
 import { Header } from '../../components/header.js';
 import { Footer } from '../../components/footer.js';
+import { Leaflet } from '../../components/leaflet/leaflet.js';
 
 export const Events = {
     type: 'div',
@@ -16,6 +17,20 @@ export const Events = {
                             content: 'Event',
                         },
                     ],
+                },
+                {
+                    type: 'div',
+                    props: {
+                        id: 'map',
+                    },
+                    events: {
+                        click: [
+                            function (event) {
+                                Leaflet(event);
+                            }
+                        ]
+                    },
+                    children: [],
                 },
             ],
         },

@@ -68,4 +68,30 @@ export const Cta = function (props) {
         ],
     };
 };
+
+export const LogoHome = function (props) {
+    return {
+        type: 'a',
+        props: {
+            href: props.to,
+        },
+        events: {
+            click: [
+                function (event) {
+                    event.preventDefault();
+                    history.pushState(null, null, props.to);
+                },
+            ],
+        },
+        children: [
+            {
+                type: 'img',
+                props: {
+                    src: '../../assets/images/icons/logo.svg',
+                    alt: 'logo',
+                },
+            },
+        ],
+    };
+};
 export default BrowserRouter;

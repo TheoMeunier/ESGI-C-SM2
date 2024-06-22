@@ -50,7 +50,6 @@ const JoDOM = {
                 element.appendChild(this.renderStructure(child));
             }
         }
-
         return element;
     },
 };
