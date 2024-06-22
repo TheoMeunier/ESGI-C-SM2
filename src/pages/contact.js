@@ -1,5 +1,6 @@
 import { Header } from '../components/header.js';
 import { Footer } from '../components/footer.js';
+import { formContact } from '../components/form/formContact.js';
 
 export const Contact = {
     type: 'div',
@@ -10,6 +11,9 @@ export const Contact = {
             children: [
                 {
                     type: 'h1',
+                    props: {
+                        class: 'contact-title',
+                    },
                     children: [
                         {
                             type: 'TEXT_NODE',
@@ -17,6 +21,15 @@ export const Contact = {
                         },
                     ],
                 },
+                {
+                    type: 'section',
+                    props: {
+                        class: 'contact-info',
+                    },
+                    children: [
+                        formContact,
+                    ]
+                }
             ],
         },
         Footer

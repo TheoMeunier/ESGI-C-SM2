@@ -37,14 +37,12 @@ img {
   object-fit: cover;
 }
 
-svg {
-  color: var(--black);
-  display: inline-block;
-  vertical-align: middle;
-}
-
 * {
   box-sizing: border-box;
+}
+
+main {
+  padding: 5rem 2rem;
 }
 
 .half {
@@ -374,6 +372,22 @@ svg {
   font-weight: normal;
   font-style: normal;
 }
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: #0078D0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: fit-content;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  font-family: "Olympic Headline", sans-serif;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -476,29 +490,79 @@ header nav ul li a {
   font-size: 1.8rem;
   font-weight: 500;
 }
-.hero-container .hero-row .cta {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border: 0;
-  background-color: #0078D0;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 500;
-  max-width: fit-content;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-  font-family: "Olympic Headline", sans-serif;
-  cursor: pointer;
-  border-radius: 2rem;
-}
-.hero-container .hero-row .cta:hover {
-  background-color: #fff;
-  color: #00287F;
-}
 .hero-container .hero-row img {
   width: 100%;
   height: 50rem;
   object-fit: cover;
+}
+
+.contact-title {
+  font-family: "Olympic Headline";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+  max-width: 180rem;
+  margin: 0 auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+.contact-info .form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 120rem;
+  gap: 2rem;
+}
+.contact-info .form-contact .form-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-info .form-contact .form-group label {
+  font-family: "Olympic Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.contact-info .form-contact .form-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: "Olympic Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--black);
+  border: 1px solid rgb(132, 132, 132);
+}
+.contact-info .form-contact .form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(132, 132, 132);
+  border-radius: 5px;
+  font-family: "Olympic Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--black);
+}
+.contact-info .form-contact .cta {
+  padding: 1rem 6rem;
+  margin-left: auto;
 }
 
 .card {
@@ -561,10 +625,6 @@ header nav ul li a {
   text-align: center;
   margin-bottom: 2rem;
   font-family: "Olympic Headline", sans-serif;
-}
-
-main {
-  padding: 5rem 2rem;
 }
 
 /*# sourceMappingURL=app.css.map */

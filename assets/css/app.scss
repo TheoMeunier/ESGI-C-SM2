@@ -1,19 +1,17 @@
+// Partials
 @import 'partials/reset';
 @import 'partials/variables';
 @import 'partials/functions';
 @import 'partials/utilities';
 @import 'partials/fonts';
+@import 'partials/buttons';
+
+// Components
 @import 'components/navbar';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/hero';
+@import 'components/contact';
 @import 'components/card';
 @import 'components/carousel';
 @import 'components/evenementList';
-
-
-
-main {
-    padding: 5rem 2rem;
-
-}

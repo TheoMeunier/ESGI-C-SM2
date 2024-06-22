@@ -37,12 +37,10 @@ img {
   object-fit: cover;
 }
 
-svg {
-  color: var(--black);
-  display: inline-block;
-  vertical-align: middle;
-}
-
 * {
   box-sizing: border-box;
+}
+
+main {
+  padding: 5rem 2rem;
 }
