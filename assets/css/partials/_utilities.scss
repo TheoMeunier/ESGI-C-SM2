@@ -1,79 +1,79 @@
-.half{
+.half {
     width: 50%;
-  }
-  
-  @for $i from 1 through 5 {
+}
+
+@for $i from 1 through 5 {
     .m-#{$i} {
-      margin: $i * 1rem;
+        margin: $i * 1rem;
     }
     .p-#{$i} {
-      padding: $i * 1rem;
+        padding: $i * 1rem;
     }
     .mt-#{$i} {
-      margin-top: $i * 1rem;
+        margin-top: $i * 1rem;
     }
     .mr-#{$i} {
-      margin-right: $i * 1rem;
+        margin-right: $i * 1rem;
     }
     .mb-#{$i} {
-      margin-bottom: $i * 1rem;
+        margin-bottom: $i * 1rem;
     }
     .ml-#{$i} {
-      margin-left: $i * 1rem;
+        margin-left: $i * 1rem;
     }
     .mx-#{$i} {
-      margin: 0 $i * 1rem;
+        margin: 0 $i * 1rem;
     }
-  
+
     .pt-#{$i} {
-      padding-top: $i * 1rem;
+        padding-top: $i * 1rem;
     }
     .pr-#{$i} {
-      padding-right: $i * 1rem;
+        padding-right: $i * 1rem;
     }
     .pb-#{$i} {
-      padding-bottom: $i * 1rem;
+        padding-bottom: $i * 1rem;
     }
     .pl-#{$i} {
-      padding-left: $i * 1rem;
+        padding-left: $i * 1rem;
     }
-  
+
     .gap-#{$i} {
-      gap: $i * 1rem;
+        gap: $i * 1rem;
     }
-  }
-  
-  .flex {
+}
+
+.flex {
     display: flex;
     &-center {
-      justify-content: center;
-      align-items: center;
+        justify-content: center;
+        align-items: center;
     }
     &-between {
-      justify-content: space-between;
-      align-items: center;
+        justify-content: space-between;
+        align-items: center;
     }
     &-around {
-      justify-content: space-around;
-      align-items: center;
+        justify-content: space-around;
+        align-items: center;
     }
     &-start {
-      justify-content: flex-start;
-      align-items: center;
+        justify-content: flex-start;
+        align-items: center;
     }
     &-end {
-      justify-content: flex-end;
-      align-items: center;
+        justify-content: flex-end;
+        align-items: center;
     }
     &-col {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
-  
-  .d-none {
+}
+
+.d-none {
     display: none;
-  }
-  
-  .d-block {
+}
+
+.d-block {
     display: block;
-  }
+}

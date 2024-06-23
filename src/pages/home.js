@@ -9,11 +9,8 @@ export const Home = {
         Header,
         {
             type: 'main',
-            children: [
-                HeroHome,
-                evenementList,
-            ],
+            children: [HeroHome, evenementList],
         },
-        Footer
+        Footer,
     ],
 };

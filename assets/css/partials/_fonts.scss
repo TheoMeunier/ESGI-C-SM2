@@ -1,13 +1,15 @@
 @font-face {
     font-family: 'Olympic Headline';
-    src: url('./../../assets/fonts/OlympicHeadline-Regular.woff2') format('woff2');
+    src: url('./../../assets/fonts/OlympicHeadline-Regular.woff2')
+        format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Olympic Headline';
-    src: url('./../../assets/fonts/OlympicHeadline-RegularItalic.woff2') format('woff2');
+    src: url('./../../assets/fonts/OlympicHeadline-RegularItalic.woff2')
+        format('woff2');
     font-weight: normal;
     font-style: italic;
 }
@@ -21,7 +23,8 @@
 
 @font-face {
     font-family: 'Olympic Sans';
-    src: url('./../../assets/fonts/OlympicSans-BoldItalic.woff2') format('woff2');
+    src: url('./../../assets/fonts/OlympicSans-BoldItalic.woff2')
+        format('woff2');
     font-weight: bold;
     font-style: italic;
 }
@@ -42,7 +45,8 @@
 
 @font-face {
     font-family: 'Olympic Sans';
-    src: url('./../../assets/fonts/OlympicSans-MediumItalic.woff2') format('woff2');
+    src: url('./../../assets/fonts/OlympicSans-MediumItalic.woff2')
+        format('woff2');
     font-weight: 500;
     font-style: italic;
 }

@@ -43,7 +43,8 @@ export const Cards = {
                     children: [
                         {
                             type: 'TEXT_NODE',
-                            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien at nunc.',
+                            content:
+                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien at nunc.',
                         },
                     ],
                 },

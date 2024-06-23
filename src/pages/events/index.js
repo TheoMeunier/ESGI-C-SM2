@@ -1,6 +1,7 @@
 import { Header } from '../../components/header.js';
 import { Footer } from '../../components/footer.js';
 import { Leaflet } from '../../components/leaflet/leaflet.js';
+import { FormFilter } from '../../components/form/formFilter.js';
 
 export const Events = {
     type: 'div',
@@ -9,6 +10,7 @@ export const Events = {
         {
             type: 'main',
             children: [
+                FormFilter,
                 {
                     type: 'h1',
                     children: [
@@ -24,16 +26,12 @@ export const Events = {
                         id: 'map',
                     },
                     events: {
-                        click: [
-                            function (event) {
-                                Leaflet(event);
-                            }
-                        ]
+                        click: [Leaflet],
                     },
                     children: [],
                 },
             ],
         },
-        Footer
+        Footer,
     ],
 };

@@ -3,8 +3,5 @@ import { NavBar } from './navBar.js';
 
 export const Header = {
     type: 'header',
-    children: [
-        LogoHome({ to: '/', title: 'Home' }),
-        NavBar,
-    ],
+    children: [LogoHome({ to: '/', title: 'Home' }), NavBar],
 };

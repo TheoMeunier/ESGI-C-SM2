@@ -1,39 +1,100 @@
-$blue: #0078D0;
-$yellow: #FFB114;
+$blue: #0078d0;
+$yellow: #ffb114;
 $black: #000000;
-$green: #00A651;
-$red: #F0282D;
-$white: #FFFFFF;
-$blue-footer: #00287F;
-
+$green: #00a651;
+$red: #f0282d;
+$white: #ffffff;
+$blue-footer: #00287f;
 
 //FONT
 $font-base: (
     font-family: 'Olympic Headline' sans-serif,
     font-weight: normal,
-    line-height: 1.5
+    line-height: 1.5,
 );
 
 $font-sans: (
     font-family: 'Olympic Sans' sans-serif,
     font-weight: normal,
-    line-height: 1.5
+    line-height: 1.5,
 );
 
-$font-h1-desktop: map_merge($font-base, (font-size: 64px));
-$font-h2-desktop: map_merge($font-base, (font-size: 64px));
-$font-h3-desktop: map_merge($font-base, (font-size: 24px));
-$font-CTA-desktop: map_merge($font-base, (font-size: 24px));
+$font-h1-desktop: map_merge(
+    $font-base,
+    (
+        font-size: 64px,
+    )
+);
+$font-h2-desktop: map_merge(
+    $font-base,
+    (
+        font-size: 64px,
+    )
+);
+$font-h3-desktop: map_merge(
+    $font-base,
+    (
+        font-size: 24px,
+    )
+);
+$font-CTA-desktop: map_merge(
+    $font-base,
+    (
+        font-size: 24px,
+    )
+);
 
-$font-text-desktop: map_merge($font-sans, (font-size: 16px));
+$font-text-desktop: map_merge(
+    $font-sans,
+    (
+        font-size: 16px,
+    )
+);
 
-$font-time-desktop: map_merge($font-sans, (font-size: 12px, font-style: italic));
+$font-time-desktop: map_merge(
+    $font-sans,
+    (
+        font-size: 12px,
+        font-style: italic,
+    )
+);
 
-$font-h1-mobile: map_merge($font-base, (font-size: 32px));
-$font-h2-mobile: map_merge($font-base, (font-size: 24px));
-$font-h3-mobile: map_merge($font-base, (font-size: 16px));
-$font-CTA-mobile: map_merge($font-base, (font-size: 10px));
+$font-h1-mobile: map_merge(
+    $font-base,
+    (
+        font-size: 32px,
+    )
+);
+$font-h2-mobile: map_merge(
+    $font-base,
+    (
+        font-size: 24px,
+    )
+);
+$font-h3-mobile: map_merge(
+    $font-base,
+    (
+        font-size: 16px,
+    )
+);
+$font-CTA-mobile: map_merge(
+    $font-base,
+    (
+        font-size: 10px,
+    )
+);
 
-$font-text-mobile: map_merge($font-sans, (font-size: 10px));
+$font-text-mobile: map_merge(
+    $font-sans,
+    (
+        font-size: 10px,
+    )
+);
 
-$font-time-mobile: map_merge($font-sans, (font-size: 10px, font-style: italic));
+$font-time-mobile: map_merge(
+    $font-sans,
+    (
+        font-size: 10px,
+        font-style: italic,
+    )
+);

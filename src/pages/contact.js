@@ -26,12 +26,10 @@ export const Contact = {
                     props: {
                         class: 'contact-info',
                     },
-                    children: [
-                        formContact,
-                    ]
-                }
+                    children: [formContact],
+                },
             ],
         },
-        Footer
+        Footer,
     ],
 };

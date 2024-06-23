@@ -1,4 +1,4 @@
-import { Cards } from "../section/cards.js";
+import { Cards } from '../section/cards.js';
 
 export const evenementList = {
     type: 'section',
@@ -26,14 +26,7 @@ export const evenementList = {
                     props: {
                         class: 'carousel-row',
                     },
-                    children: [
-                        Cards,
-                        Cards,
-                        Cards,
-                        Cards,
-                        Cards,
-                        Cards,
-                    ],
+                    children: [Cards, Cards, Cards, Cards, Cards, Cards],
                 },
             ],
         },

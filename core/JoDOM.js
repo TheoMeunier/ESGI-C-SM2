@@ -38,8 +38,11 @@ const JoDOM = {
         }
 
         if (structure.events) {
+            console.log(structure.events);
             for (const eventName in structure.events) {
+                console.log(eventName);
                 for (const eventListeners of structure.events[eventName]) {
+                    console.log(eventListeners);
                     element.addEventListener(eventName, eventListeners);
                 }
             }

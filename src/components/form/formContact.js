@@ -39,7 +39,6 @@ export const formContact = {
                             children: [],
                         },
                     ],
-
                 },
                 {
                     type: 'div',
@@ -70,7 +69,6 @@ export const formContact = {
                             children: [],
                         },
                     ],
-
                 },
             ],
         },
@@ -98,12 +96,10 @@ export const formContact = {
                         id: 'message',
                         name: 'message',
                         required: true,
-
                     },
                     children: [],
                 },
             ],
-
         },
         {
             type: 'button',
@@ -118,5 +114,5 @@ export const formContact = {
                 },
             ],
         },
-    ]
+    ],
 };
