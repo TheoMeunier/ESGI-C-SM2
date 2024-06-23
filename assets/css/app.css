@@ -626,10 +626,10 @@ header nav ul li a {
 .carousel-container {
   display: flex;
   gap: 3rem;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
-  scrollbar-width: none;
   padding: 2rem;
+  scrollbar-width: none;
 }
 .carousel-container .carousel-row {
   display: flex;
@@ -637,6 +637,13 @@ header nav ul li a {
   gap: 1.5rem;
   justify-content: space-between;
   user-select: none;
+  cursor: grab;
+}
+.carousel-container .carousel-row::-webkit-scrollbar {
+  display: none;
+}
+.carousel-container .carousel-row.active {
+  cursor: grabbing;
 }
 
 .evenement-container {
