@@ -25,13 +25,17 @@ export const Events = {
                     props: {
                         id: 'map',
                     },
-                    events: {
-                        click: [Leaflet],
-                    },
                     children: [],
                 },
             ],
         },
         Footer,
     ],
+    events: {
+        mounted: [
+            async function (element) {
+                await Leaflet();
+            }
+        ],
+    },
 };

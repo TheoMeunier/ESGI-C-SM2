@@ -38,13 +38,20 @@ const JoDOM = {
         }
 
         if (structure.events) {
-            console.log(structure.events);
             for (const eventName in structure.events) {
-                console.log(eventName);
-                for (const eventListeners of structure.events[eventName]) {
-                    console.log(eventListeners);
-                    element.addEventListener(eventName, eventListeners);
+                if (eventName === 'mounted') {
+                    setTimeout(() => {
+                        for (const callback of structure.events[eventName]) {
+                            callback(element);
+                        }
+                    }, 0);
                 }
+                else {
+                    for (const eventListeners of structure.events[eventName]) {
+                        element.addEventListener(eventName, eventListeners);
+                    }
+                }
+
             }
         }
 

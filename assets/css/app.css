@@ -1,3 +1,4 @@
+@import '../../node_modules/leaflet/dist/leaflet.css';
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -376,7 +377,7 @@ main {
   display: inline-block;
   padding: 1rem 2rem;
   border: 0;
-  background-color: #0078D0;
+  background-color: #0078d0;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 500;
@@ -393,7 +394,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 8rem;
-  background-color: #00287F;
+  background-color: #00287f;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 500;
@@ -484,7 +485,7 @@ header nav ul li a {
   font-style: normal;
   font-weight: 700;
   line-height: 7.5rem;
-  color: #0078D0;
+  color: #0078d0;
 }
 .hero-container .hero-row .hero-content {
   font-size: 1.8rem;
