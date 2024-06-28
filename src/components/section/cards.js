@@ -5,55 +5,71 @@ export const Cards = {
     },
     children: [
         {
-            type: 'img',
+            type: 'a',
             props: {
-                src: '../../../assets/images/paris.png',
-                alt: '',
+                href: '/events/:1',
             },
-        },
-        {
-            type: 'div',
-            props: {
-                class: 'content',
+            events: {
+                click: [
+                    function (event) {
+                        event.preventDefault();
+                        history.pushState(null, null, '/events/:1');
+                    },
+                ],
             },
             children: [
                 {
-                    type: 'span',
+                    type: 'img',
                     props: {
-                        class: 'pill',
+                        src: '../../../assets/images/paris.png',
+                        alt: '',
+                    },
+                },
+                {
+                    type: 'div',
+                    props: {
+                        class: 'content',
                     },
                     children: [
                         {
-                            type: 'TEXT_NODE',
-                            content: 'FootBall',
+                            type: 'span',
+                            props: {
+                                class: 'pill',
+                            },
+                            children: [
+                                {
+                                    type: 'TEXT_NODE',
+                                    content: 'FootBall',
+                                },
+                            ],
                         },
-                    ],
-                },
-                {
-                    type: 'h3',
-                    children: [
                         {
-                            type: 'TEXT_NODE',
-                            content: 'Evenement 1',
+                            type: 'h3',
+                            children: [
+                                {
+                                    type: 'TEXT_NODE',
+                                    content: 'Evenement 1',
+                                },
+                            ],
                         },
-                    ],
-                },
-                {
-                    type: 'p',
-                    children: [
                         {
-                            type: 'TEXT_NODE',
-                            content:
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien at nunc.',
+                            type: 'p',
+                            children: [
+                                {
+                                    type: 'TEXT_NODE',
+                                    content:
+                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien at nunc.',
+                                },
+                            ],
                         },
-                    ],
-                },
-                {
-                    type: 'time',
-                    children: [
                         {
-                            type: 'TEXT_NODE',
-                            content: '12/12/2021',
+                            type: 'time',
+                            children: [
+                                {
+                                    type: 'TEXT_NODE',
+                                    content: '12/12/2021',
+                                },
+                            ],
                         },
                     ],
                 },

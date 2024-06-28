@@ -1,7 +1,7 @@
 import { Header } from '../../components/header.js';
 import { Footer } from '../../components/footer.js';
-import { Leaflet } from '../../components/leaflet/leaflet.js';
 import { FormFilter } from '../../components/form/formFilter.js';
+import { Cards } from '../../components/section/cards.js';
 
 export const Events = {
     type: 'div',
@@ -21,21 +21,21 @@ export const Events = {
                     ],
                 },
                 {
-                    type: 'div',
+                    type: 'section',
                     props: {
-                        id: 'map',
+                        class: 'card-list',
                     },
-                    children: [],
+                    children: [
+                        {
+                            loop: {
+                                count: 12,
+                                template: Cards,
+                            },
+                        },
+                    ],
                 },
             ],
         },
         Footer,
     ],
-    events: {
-        mounted: [
-            async function (element) {
-                await Leaflet();
-            }
-        ],
-    },
 };

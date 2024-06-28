@@ -45,14 +45,27 @@ const JoDOM = {
                             callback(element);
                         }
                     }, 0);
-                }
-                else {
+                } else {
                     for (const eventListeners of structure.events[eventName]) {
                         element.addEventListener(eventName, eventListeners);
                     }
                 }
-
             }
+        }
+
+        if (structure.loop) {
+            const container = document.createElement('ul');
+            for (let i = 0; i < structure.loop.count; i++) {
+                const loopElement = this.renderStructure({
+                    ...structure.loop.template,
+                    props: {
+                        ...structure.loop.template.props,
+                        'data-index': i,
+                    },
+                });
+                container.appendChild(loopElement);
+            }
+            return container;
         }
 
         if (structure.children) {
@@ -60,6 +73,7 @@ const JoDOM = {
                 element.appendChild(this.renderStructure(child));
             }
         }
+
         return element;
     },
 };
