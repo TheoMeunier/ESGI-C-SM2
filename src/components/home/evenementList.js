@@ -1,4 +1,5 @@
 import { Cards } from '../section/cards.js';
+import './../../../assets/js/components/carousel.js';
 
 export const evenementList = {
     type: 'section',
