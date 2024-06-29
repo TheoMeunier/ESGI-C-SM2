@@ -1,17 +1,785 @@
-/* Error: expected "{".
- *    ,
- * 21 | @import 'components/inputs';
- *    |                            ^
- *    '
- *   assets\css\app.scss 21:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected \"{\".\a    \2577 \a 21 \2502  @import 'components/inputs';\d\a    \2502                             ^\a    \2575 \a   assets\\css\\app.scss 21:28  root stylesheet";
+@import '../../node_modules/leaflet/dist/leaflet.css';
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Olympic Sans", sans-serif;
 }
+
+body {
+  margin: 0;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+ul,
+ol,
+section {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  padding: 0;
+  border: 0;
+  color: var(--black);
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 3rem 2rem;
+}
+
+.half {
+  width: 50%;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pr-3 {
+  padding-right: 3rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mr-4 {
+  margin-right: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.pr-4 {
+  padding-right: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
+
+.pl-4 {
+  padding-left: 4rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mr-5 {
+  margin-right: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pr-5 {
+  padding-right: 5rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.pl-5 {
+  padding-left: 5rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-around {
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-start {
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-end {
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@font-face {
+  font-family: "Olympic Headline";
+  src: url("./../../assets/fonts/OlympicHeadline-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Olympic Headline";
+  src: url("./../../assets/fonts/OlympicHeadline-RegularItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Olympic Sans";
+  src: url("./../../assets/fonts/OlympicSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Olympic Sans";
+  src: url("./../../assets/fonts/OlympicSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Olympic Sans";
+  src: url("./../../assets/fonts/OlympicSans-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Olympic Sans";
+  src: url("./../../assets/fonts/OlympicSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Olympic Sans";
+  src: url("./../../assets/fonts/OlympicSans-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Olympic Sans";
+  src: url("./../../assets/fonts/OlympicSans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: #0078d0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: fit-content;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  font-family: "Olympic Headline", sans-serif;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+  background-color: #00287f;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10rem;
+}
+footer .logo-footer {
+  width: 18rem;
+}
+footer p {
+  position: relative;
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+footer p::before {
+  content: url("../images/mascotte-footer.png");
+  position: absolute;
+  transform: translate(-65%, -70%);
+  width: 20rem;
+  height: 24rem;
+  object-fit: cover;
+}
+footer ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer ul li a img {
+  width: 2.4rem;
+}
+
+header {
+  padding: 2rem 10rem;
+  max-width: 200rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  max-width: 8rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Olympic Headline", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 0 auto;
+  max-width: 140rem;
+  min-height: 60vh;
+}
+.hero-container .hero-row {
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+  max-width: 60rem;
+  gap: 2rem;
+}
+.hero-container .hero-row .hero-title {
+  font-family: "Olympic Headline", sans-serif;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7.5rem;
+  color: #0078d0;
+}
+.hero-container .hero-row .hero-content {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.hero-container .hero-row img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-main .contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-main .contact-header .mascotte-contact {
+  height: 15rem;
+  width: auto;
+  margin-right: 4rem;
+}
+.contact-main .contact-header .contact-title {
+  font-family: "Olympic Headline";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  max-width: 180rem;
+  margin: 0;
+}
+.contact-main .contact-info {
+  margin-top: 5rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+.contact-info .form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 140rem;
+  gap: 2rem;
+}
+.contact-info .form-contact .form-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-info .form-contact .form-group {
+  width: 100%;
+}
+.contact-info .form-contact .form-group label {
+  font-family: "Olympic Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.contact-info .form-contact .form-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: "Olympic Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--black);
+  border: 1px solid rgb(132, 132, 132);
+}
+.contact-info .form-contact .form-group textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 1rem;
+  border: 1px solid rgb(132, 132, 132);
+  border-radius: 5px;
+  font-family: "Olympic Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  resize: none;
+  color: var(--black);
+}
+.contact-info .form-contact .cta {
+  padding: 1rem 6rem;
+  margin-left: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
+  width: 35rem;
+  height: 40rem;
+}
+.card img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card .content {
+  padding: 1.5rem;
+}
+.card .content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card .content p {
+  font-size: 16px;
+  color: #333;
+}
+.card .content .pill {
+  background: var(--blue, #0078d0);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.card-list {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.card-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem;
+  scrollbar-width: none;
+}
+.carousel-container .carousel-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-between;
+  user-select: none;
+  cursor: grab;
+}
+.carousel-container .carousel-row::-webkit-scrollbar {
+  display: none;
+}
+.carousel-container .carousel-row.active {
+  cursor: grabbing;
+}
+
+.evenement-container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.evenement-container h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Olympic Headline", sans-serif;
+}
+
+.amuse-section {
+  margin-top: 10rem;
+  max-width: 140rem;
+  margin: 10rem auto 0 auto;
+  flex-wrap: wrap;
+}
+.amuse-section h2 {
+  color: var(--black);
+  font-family: "Olympic Headline", sans-serif;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.amuse-section p {
+  color: var(--black);
+  font-family: "Olympic Sans", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 64px;
+  width: 50rem;
+  text-align: center;
+}
+.amuse-section img {
+  height: 40rem;
+  width: 60rem;
+  gap: 0px;
+  border-radius: 1.6rem;
+  opacity: 0px;
+}
+.amuse-section .cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: #0078D0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: fit-content;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  font-family: "Olympic Headline", sans-serif;
+  cursor: pointer;
+  border-radius: 2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.amuse-section .cta:hover {
+  background-color: #fff;
+  color: #00287F;
+}
+
+.input-events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.input-events .input-search-container {
+  flex: 1;
+  font-family: "Olympic Sans";
+  font-size: 24px;
+}
+.input-events .input-search-container .input-icon-wrapper {
+  position: relative;
+  width: 39rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #C9C9C9;
+  border-radius: 1.5rem;
+}
+.input-events .input-search-container .input-icon-wrapper .search-icon {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.input-events .input-search-container .input-icon-wrapper .input-search {
+  flex: 1;
+  height: 100%;
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+}
+.input-events .input-select-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.input-events .input-select-container .input-select {
+  flex: 1;
+  width: 26rem;
+  height: 6rem;
+  border: 1px solid #C9C9C9;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+  font-size: 24px;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+  margin: 3rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+/*# sourceMappingURL=app.css.map */

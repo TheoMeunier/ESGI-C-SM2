@@ -1,146 +1,113 @@
 export const FormFilter = {
-    type: 'form',
+    type: 'div',
     props: {
-        class: 'form-contact',
+        class: 'input-events',
     },
     children: [
         {
             type: 'div',
             props: {
-                class: 'form-row',
+                class: 'input-search-container',
             },
             children: [
                 {
                     type: 'div',
                     props: {
-                        class: 'form-group',
+                        class: 'input-icon-wrapper',
                     },
                     children: [
                         {
-                            type: 'label',
+                            type: 'img',
                             props: {
-                                for: 'search',
+                                src: '/assets/images/icons/search.svg',
+                                alt: 'Search Icon',
+                                class: 'search-icon',
                             },
-                            children: [
-                                {
-                                    type: 'TEXT_NODE',
-                                    content: 'Recherche',
-                                },
-                            ],
                         },
                         {
                             type: 'input',
                             props: {
                                 type: 'text',
+                                class: 'input-search',
                                 id: 'search',
                                 name: 'search',
+                                placeholder: 'Recherche',
                                 required: true,
                             },
-                            children: [],
                         },
                     ],
                 },
+            ],
+        },
+        {
+            type: 'div',
+            props: {
+                class: 'input-select-container',
+            },
+            children: [
                 {
-                    type: 'div',
+                    type: 'select',
                     props: {
-                        class: 'form-group',
+                        class: 'input-select',
+                        id: 'type',
+                        name: 'type',
                     },
                     children: [
                         {
-                            type: 'label',
+                            type: 'option',
                             props: {
-                                for: 'type',
+                                value: 'all',
                             },
                             children: [
                                 {
                                     type: 'TEXT_NODE',
-                                    content: 'Type',
+                                    content: 'Tous',
                                 },
                             ],
                         },
                         {
-                            type: 'select',
+                            type: 'option',
                             props: {
-                                id: 'type',
-                                name: 'type',
+                                value: 'restaurant',
                             },
                             children: [
                                 {
-                                    type: 'option',
-                                    props: {
-                                        value: 'all',
-                                    },
-                                    children: [
-                                        {
-                                            type: 'TEXT_NODE',
-                                            content: 'Tous',
-                                        },
-                                    ],
+                                    type: 'TEXT_NODE',
+                                    content: 'Restaurant',
                                 },
+                            ],
+                        },
+                        {
+                            type: 'option',
+                            props: {
+                                value: 'hotel',
+                            },
+                            children: [
                                 {
-                                    type: 'option',
-                                    props: {
-                                        value: 'restaurant',
-                                    },
-                                    children: [
-                                        {
-                                            type: 'TEXT_NODE',
-                                            content: 'Restaurant',
-                                        },
-                                    ],
-                                },
-                                {
-                                    type: 'option',
-                                    props: {
-                                        value: 'hotel',
-                                    },
-                                    children: [
-                                        {
-                                            type: 'TEXT_NODE',
-                                            content: 'Hotel',
-                                        },
-                                    ],
+                                    type: 'TEXT_NODE',
+                                    content: 'Hotel',
                                 },
                             ],
                         },
                     ],
                 },
                 {
-                    type: 'div',
+                    type: 'select',
                     props: {
-                        class: 'form-group',
+                        class: 'input-select',
+                        id: 'city',
+                        name: 'city',
                     },
                     children: [
                         {
-                            type: 'label',
+                            type: 'option',
                             props: {
-                                for: 'city',
+                                value: 'all',
                             },
                             children: [
                                 {
                                     type: 'TEXT_NODE',
-                                    content: 'Ville',
-                                },
-                            ],
-                        },
-                        {
-                            type: 'select',
-                            props: {
-                                id: 'city',
-                                name: 'city',
-                            },
-                            children: [
-                                {
-                                    type: 'option',
-                                    props: {
-                                        value: 'all',
-                                    },
-                                    children: [
-                                        {
-                                            type: 'TEXT_NODE',
-                                            content: 'Toutes',
-                                        },
-                                    ],
+                                    content: 'Toutes',
                                 },
                             ],
                         },
