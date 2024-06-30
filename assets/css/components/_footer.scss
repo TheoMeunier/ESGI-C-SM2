@@ -42,9 +42,28 @@ footer {
                 transition: color 0.3s;
 
                 img {
-                    width: 2.4rem;
+                    width: 2.6rem;
                 }
             }
         }
     }
+}
+
+
+@media screen and (max-width: 768px)
+{   
+footer{
+    flex-direction: column;
+    p{
+        margin-bottom: 4rem;
+    }
+    .logo-footer{
+        width: 6rem;
+    }
+
+    .logo-footer {
+        display: none;
+    }
+}
+    
 }

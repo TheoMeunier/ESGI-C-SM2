@@ -3,10 +3,21 @@
     margin: 0 auto;
 
     h2 {
-        font-size: 5rem;
+        font-size: 6.4rem;
         font-weight: bold;
         text-align: center;
         margin-bottom: 2rem;
         font-family: 'Olympic Headline', sans-serif;
     }
+}
+
+@media screen and (max-width: 768px){
+    .evenement-container{
+        h2 {
+            font-size: 4.8rem;
+            line-height: 5.5rem;
+            text-align: center;
+        }
+    }
+    
 }

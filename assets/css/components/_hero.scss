@@ -36,3 +36,28 @@
         }
     }
 }
+
+
+@media screen and (max-width: 768px){
+    .hero-container{
+        min-height: 40rem;
+        .hero-row {
+            .hero-title {
+                font-size: 4.8rem;
+                line-height: 5.5rem;
+                text-align: center;
+            }
+            .hero-content {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+            img {
+                display: none;
+            }
+            .cta {
+                margin: 0 auto;
+            }
+}
+}
+
+}

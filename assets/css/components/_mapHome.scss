@@ -17,13 +17,13 @@
     font-family: "Olympic Sans", sans-serif;
     font-size: 1.6rem;
     margin-bottom: 64px;
-    width: 50rem;
+    max-width: 50rem;
     text-align: center;
   }
 
   img {
-    height: 40rem;
-    width: 60rem;
+    max-height: 40rem;
+    max-width: 60rem;
     gap: 0px;
     border-radius: 1.6rem;
     opacity: 0px;
@@ -53,4 +53,18 @@
     }
     
 }
+}
+
+@media screen and (max-width: 768px) {
+  .amuse-section {
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+  }
 }
